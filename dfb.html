@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Commands</title>
+    <link rel="stylesheet" href="./dfb.css">
+    <link rel="shortcut icon" href="./central-bot-favicon-white.png" type="image/x-icon">
+</head>
+<body id="mb">
+    <div class="tpv">
+        <div class="nvg">
+            <img src="./central-bot-favicon-white.png" alt="">
+
+            <ul>
+                <li><a href="" id="om" onclick="makeActive()">Home</a></li>
+                <li><a href="" id="oc" onclick="makeActive()">Docs</a></li>
+                <li><a href="" id="es" onclick="makeActive()">Latest</a></li>
+            </ul>
+        </div>
+
+        <div class="cvd" id="ft" onclick="switchTheme()">
+            <div class="lfg" id="lt">
+                <i class="fa-solid fa-sun" style="color: #ffd91a;" id="vh"></i>
+                <i class="fa-solid fa-moon" style="color: #353839;" id="hv"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="fkl">
+        <div class="imgur">
+            <img src="./central-bot-high-resolution-logo-white-transparent.png" alt="">
+
+            <p>
+                Bored of having to Google commands just for them not to work<br>
+                well worry no more, Here at BoT Commands have dedicated to making<br>
+                your day and your server members life easier, access our command<br>
+                Database with all the commands you'd like to add to your bot and up<br>
+                your server game. Our huge cataloge of carefully well thought out command<br>
+                written in mind of how the servers requirements might play out<br>
+                has been made escpecially just for you.
+            </p>
+        </div>
+        <div class="fls">
+            <h1>Welcome To Central BoT</h1>
+            <img src="./well-bender-ezgif.com-video-to-gif-converter.gif" alt="Animated GIF">
+            <div class="lvf">
+                <i class="fa-regular fa-circle-right" style="color: #f1f1f1;"></i>
+                <a href="">Learn More...</a>
+                <i class="fa-regular fa-circle-left" style="color: #f1f1f1;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="cnp">
+        <div class="in-box">
+            <p contenteditable="false">
+                <span class="keyword">class</span> Event {<br>
+                  <span class="function">&nbsp;&nbsp;&nbsp;constructor</span>(<span class="string">name</span>, <span class="string">time</span>, <span class="string">description</span>) {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.name = name;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.time = time;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">this</span>.description = description;<br>
+                  }
+                }<br>
+              
+                <span class="comment">// Function to notify users of an upcoming event</span><br>
+                <span class="function">function</span> notifyEvent(event) {<br>
+                  &nbsp;&nbsp;&nbsp;<span class="function">console.log</span>(<span class="string">`Event: ${event.name}\nTime: ${event.time}\nDescription: ${event.description}\n`</span>);<br>
+                }<br>
+              
+                <span class="comment">// Function to create a timer for an event</span><br>
+                <span class="function">function</span> createEventTimer(event) {<br>
+                  &nbsp;&nbsp;&nbsp;<span class="keyword">const</span> eventTime = <span class="keyword">new</span> <span class="function">Date</span>(event.time);<br>
+                  &nbsp;&nbsp;&nbsp;<span class="keyword">const</span> currentTime = <span class="keyword">new</span> <span class="function">Date</span>();<br>
+              
+                  &nbsp;&nbsp;&nbsp;<span class="keyword">const</span> timeDifference = eventTime.getTime() - currentTime.getTime();<br>
+              
+                  &nbsp;&nbsp;&nbsp;<span class="function">setTimeout</span>(() => {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notifyEvent(event);<br>
+                  }, timeDifference);<br>
+                }<br>
+              
+                <span class="comment">// Function to add reactions to event messages</span><br>
+                <span class="function">function</span> addReactionsToEventMessage(eventMessage) {<br>
+                  &nbsp;&nbsp;&nbsp;<span class="comment">// Assume eventMessage is a placeholder for the actual message object</span><br>
+                  &nbsp;&nbsp;&nbsp;<span class="comment">// Add reactions to the event message based on your requirements</span><br>
+                  &nbsp;&nbsp;&nbsp;eventMessage.addReaction(<span class="string">'👍'</span>);<br>
+                  &nbsp;&nbsp;&nbsp;eventMessage.addReaction(<span class="string">'❤️'</span>);<br>
+                }<br>
+              
+                <span class="comment">// Example usage</span><br>
+                <span class="keyword">const</span> birthdayEvent = <span class="keyword">new</span> Event(<span class="string">"Birthday Party"</span>, <span class="string">"2024-02-01T18:00:00"</span>, <span class="string">"Join us for a celebration!"</span>);<br>
+              
+                <span class="comment">// Notify users and create a timer for the birthday event</span><br>
+                notifyEvent(birthdayEvent);<br>
+                createEventTimer(birthdayEvent);<br>
+              
+                <span class="comment">// Assume eventMessage is a placeholder for the actual message object in your messaging system</span><br>
+                <span class="keyword">const</span> eventMessage = { addReaction: (reaction) => <span class="function">console.log</span>(<span class="string">`Reaction added: ${reaction}`</span>) };<br>
+              
+                <span class="comment">// Add reactions to the event message</span><br>
+                addReactionsToEventMessage(eventMessage);<br>
+              </p>
+        </div>
+
+        <div class="mor">
+            <h1>Enjoy Our Snippet</h1>
+            <p>
+                This is just the little part of our enormous<br>
+                cataloge of commands feel free to go through our<br>
+                Doc Command list.
+            </p>
+
+            <div class="pdf">
+                <i class="fa-solid fa-file-lines" style="color: #ffffff;"></i>
+                <a href="">Read Doc List</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./dfb.js"></script>
+    <script src="https://kit.fontawesome.com/826c469fe7.js" crossorigin="anonymous"></script>
+</body>
+</html>
